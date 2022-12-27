@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Spring Security</title>
@@ -8,12 +9,13 @@
 <body>
 
 <h1>This is the Home Page!</h1>
-
 <p th:inline="text">
-   You are logged as: <b>[[${#httpServletRequest.remoteUser}]]</b>
+    You are logged as: <b>[[${#httpServletRequest.remoteUser}]]</b>
     (<a href="/logout">logout</a>)
-
-
-
+<div sec:authorize="hasAnyRole('ADMIN')" >
+    <button>
+        <span> <a th:href="@{/page/form}" id="backToPatient">Add User</a></span>
+    </button>
+</div>
 </body>
 </html>
