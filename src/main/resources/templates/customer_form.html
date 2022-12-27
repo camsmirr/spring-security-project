@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Create User Form</title>
 </head>
 <body>
 <h1> Create User Form</h1>
-<form th:action="@{/addUser_action}" th:object="${user}" method="post">
-    <p>Full Name: <input type="text" th:field="*{name}"></p>
-    <p>User Name: <input type="text" th:field="*{username}"></p>
-    <p>Email: <input type="text" th:field="*{email}"></p>
-    <p>Password: <input type="text" th:field="*{password}"></p>
-    <p>Role: <input type="text" th:field="*{role}"></p>
-    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+<form th:action="@{/userAction}" th:object="${user}" method="post">
+    <label>First name:</label><br>
+    <input type="text"  th:filed="*{name}"><br>
+    <label>User name:</label><br>
+    <input type="text"  th:filed="*{username}"><br>
+    <label>Email:</label><br>
+    <input type="text"  th:filed="*{email}"><br>
+    <label>Password:</label><br>
+    <input type="text"  th:filed="*{password}"><br>
+    <label>Role:</label><br>
+    <input type="text"  th:filed="*{role}"><br>
+    <button
+            class="text-base w-40  ml-2  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer
+					        hover: bg-[#46bb91]
+					        bg-[#46bb91]
+					        text-white
+					        border duration-200 ease-in-out
+					        border- bg-[#46bb91] transition"
+            type="submit" >Submit</button>
 </form>
 </body>
 </html>
