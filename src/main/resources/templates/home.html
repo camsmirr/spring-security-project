@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Security</title>
+</head>
+<body>
+
+<h1>This is the Home Page!</h1>
+
+<p th:inline="text">
+   You are logged as: <b>[[${#httpServletRequest.remoteUser}]]</b>
+    (<a href="/logout">logout</a>)
+
+
+
+</body>
+</html>
