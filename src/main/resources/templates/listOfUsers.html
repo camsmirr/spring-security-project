@@ -1,32 +1,74 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:c="">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<h1> LIST OF USERS </h1>
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+            <th scope="col" class="py-3 px-6">
+                Id
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Name
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Username
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Email
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Role
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${listOfUsers}" class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                th:text="${p.id}">>
 
-<table class="w-full text-sm text-left text-[#101010]">
-  <thead class="text-xs text-[#101010] uppercase bg-[#FFFFFF]">
-  <tr>
-    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">No</th>
-    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Name</th>
-    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Username</th>
-    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Email</th>
-    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Role</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr th:each="p : ${listOfUsers}">
-      <td th:text="${p.id}"> </td>
-      <td th:text="${p.name}"> </td>
-      <td th:text="${p.username}"> </td>
-      <td th:text="${p.email}"> </td>
-      <td th:text="${p.role}"> </td>
+            </th>
+            <td class="py-4 px-6"
+                th:text="${p.name}">>
 
-    </tr>
-  </tbody>
-</table>
+            </td>
+            <td class="py-4 px-6"
+                th:text="${p.username}">
+            </td>
+            <td class="py-4 px-6" th:text="${p.email}">>
+            </td>
+            <td class="py-4 px-6" th:text="${p.role}">>
+            </td>
+            <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
-</body>
-</html>
+    <button>
+        <span> <a th:href="@{/home}">Back to home</a></span>
+    </button>
+</div>

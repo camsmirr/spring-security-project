@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18850f90-514e-434c-9bff-d972a0a60f02" name="Changes" comment="final commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/CustomUserDetails.java" afterDir="false" />
+    <list default="true" id="18850f90-514e-434c-9bff-d972a0a60f02" name="Changes" comment="add forms working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/services/UserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/services/UserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listOfUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listOfUsers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672144586605</updated>
       <workItem from="1672144587716" duration="15261000" />
-      <workItem from="1672160393265" duration="7783000" />
+      <workItem from="1672160393265" duration="9927000" />
     </task>
     <task id="LOCAL-00001" summary="final commit">
       <created>1672160552174</created>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672160552174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add forms working">
+      <created>1672199198207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672199198207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="final commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
+    <MESSAGE value="add forms working" />
+    <option name="LAST_COMMIT_MESSAGE" value="add forms working" />
   </component>
 </project>

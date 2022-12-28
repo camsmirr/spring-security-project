@@ -29,31 +29,19 @@ import java.util.List;
         @Autowired
         private MachineRepository machineRepository;
 
-    @GetMapping("/user_form")
+    @GetMapping("/admin/user_form")
     public String showUserAddForm(ModelMap model) {
         User user = new User();
         model.addAttribute("user", user);
         return "customer_form";
     }
-//
-//    @PostMapping("/user_addAction")
-//    public String submitTournamentAddForm(@ModelAttribute("user") User user, ModelMap model){
-//        System.out.print(user.)
-//        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-//        String encodedPassword;
-//        encodedPassword = passwordEncoder.encode(user.getPassword());
-//        user.setPassword(encodedPassword);
-//        userRepository.save(user);
-//        return "redirect:/listOfUsers";
-//    }
 
     @PostMapping("/user_addAction")
-    public String submitAddStaffForm(@ModelAttribute("user") User user, ModelMap model) {
+    public String submitAddForm(@ModelAttribute("user") User user, ModelMap model) {
         System.out.println(user.getPassword() + "Hi");
         System.out.println(user.getEmail() + "Hi");
         System.out.println(user.getName() + "Hi");
         System.out.println(user.getRole() + "Hello");
-
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword;
         encodedPassword = passwordEncoder.encode(user.getPassword());
