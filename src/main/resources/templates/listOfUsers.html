@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:c="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table class="w-full text-sm text-left text-[#101010]">
+  <thead class="text-xs text-[#101010] uppercase bg-[#FFFFFF]">
+  <tr>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">No</th>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Name</th>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Username</th>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Email</th>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Role</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="p : ${listOfUsers}">
+      <td th:text="${p.id}"> </td>
+      <td th:text="${p.name}"> </td>
+      <td th:text="${p.username}"> </td>
+      <td th:text="${p.email}"> </td>
+      <td th:text="${p.role}"> </td>
+
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

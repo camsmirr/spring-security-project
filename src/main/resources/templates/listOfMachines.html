@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:c="">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<table class="w-full text-sm text-left text-[#101010]">
+  <thead class="text-xs text-[#101010] uppercase bg-[#FFFFFF]">
+  <tr>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">No</th>
+    <th scope="col" class="py-3 px-6 border-b-2 border-[#878787]">Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="p : ${listOfMachines}">
+    <td th:text="${p.id}"> </td>
+    <td th:text="${p.description}"> </td>
+
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
