@@ -7,15 +7,11 @@ import org.springframework.security.authentication.dao.DaoAuthenticationProvider
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-@EnableWebSecurity
+    @EnableWebSecurity
     @Configuration
     public class SecurityConfig  {
 
@@ -43,12 +39,12 @@ import org.springframework.security.web.SecurityFilterChain;
         @Bean
         protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
             http.authorizeRequests()
-                    .antMatchers("/form","/login").permitAll()
+                   .antMatchers("/form","/login").permitAll()
                     .antMatchers("/page/all").permitAll()
-                    .antMatchers("/page/manager/").hasRole("MANAGER")
-                    .antMatchers("/page/admin/listOfUsers").hasRole("ADMIN")
-                    .antMatchers("/page/customer").hasRole("CUSTOMER")
-                    .antMatchers("/page/owner/listOfMachines").hasRole("CUSTOMER")
+                    .antMatchers("/page/manager/**").hasRole("MANAGER")
+                    .antMatchers("/page/admin/**").hasRole("ADMIN")
+                    .antMatchers("/page/customer/**").hasRole("CUSTOMER")
+                    .antMatchers("/page/owner/**").hasRole("OWNER")
                     .anyRequest().authenticated()
                     .and()
                     .formLogin()

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18850f90-514e-434c-9bff-d972a0a60f02" name="Changes" comment="final commit" />
+    <list default="true" id="18850f90-514e-434c-9bff-d972a0a60f02" name="Changes" comment="final commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/services/UserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sevensevengsi/laundry/services/UserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "last_opened_file_path": "C:/Users/CRAMOS/OneDrive/Documents/GitHub/spring-security-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -103,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672144586605</updated>
       <workItem from="1672144587716" duration="15261000" />
-      <workItem from="1672160393265" duration="397000" />
+      <workItem from="1672160393265" duration="7783000" />
     </task>
     <task id="LOCAL-00001" summary="final commit">
       <created>1672160552174</created>

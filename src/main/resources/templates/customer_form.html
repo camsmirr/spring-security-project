@@ -8,17 +8,17 @@
 </head>
 <body>
 <h1> Create User Form</h1>
-<form th:action="@{/userAction}" th:object="${user}" method="post">
+<form th:action="@{/page/user_addAction}" th:object="${user}" method="post">
     <label>First name:</label><br>
-    <input type="text"  th:filed="*{name}"><br>
+    <input type="text" name ="name"  th:field="*{name}"><br>
     <label>User name:</label><br>
-    <input type="text"  th:filed="*{username}"><br>
+    <input type="text" name="username"  th:field="*{username}"><br>
     <label>Email:</label><br>
-    <input type="text"  th:filed="*{email}"><br>
+    <input type="text" name="email"  th:field="*{email}"><br>
     <label>Password:</label><br>
-    <input type="text"  th:filed="*{password}"><br>
+    <input type="password" name="password"  th:field="*{password}"><br>
     <label>Role:</label><br>
-    <input type="text"  th:filed="*{role}"><br>
+    <input type="text" name="role"  th:field="*{role}"><br>
     <button
             class="text-base w-40  ml-2  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer
 					        hover: bg-[#46bb91]

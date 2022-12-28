@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UserController {
 
+    @Autowired
     UserRepository userRepository;
 
     @GetMapping("/getAllUsers")
@@ -26,7 +27,7 @@ public class UserController {
         return user;
     }
 
-    @PostMapping("createUser")
+    @PostMapping("/createUser")
     public User createUser(@RequestBody User user){
         User saveUser = userRepository.save(user);
         return saveUser;

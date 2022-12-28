@@ -15,7 +15,7 @@
 <div sec:authorize="hasAnyRole('ADMIN')" >
     <h1> Admin Dashboard </h1>
     <button>
-        <span> <a th:href="@{/page/form}">Add User</a></span>
+        <span> <a th:href="@{/page/user_form}">Add User</a></span>
     </button>
     <button>
         <span> <a th:href="@{/page/admin/listOfUsers}">List of Users</a></span>
@@ -31,9 +31,9 @@
 </div>
 
 <div sec:authorize="hasAnyRole('OWNER')" >
-    <h1> MANAGER Dashboard </h1>
+    <h1> OWNER Dashboard </h1>
     <button>
-        <span> <a th:href="@{/page/manager/listOfMachines}">List of Machines</a></span>
+        <span> <a th:href="@{/page/owner/listOfMachines}">List of Machines</a></span>
     </button>
 </div>
 
